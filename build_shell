@@ -1,0 +1,9 @@
+#! /bin/bash
+
+cd /aiez/aiez-client
+git pull origin master
+
+cd /aiez/aiez_server
+docker-compose pull
+docker-compose restart
+docker-compose up --build
